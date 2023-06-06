@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        body{ 
+            
+            
+            background-image: url("bg.jpg");
+            background-size: cover;
+            
+          }
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+        nav{
+            width: 100%;
+            background-color: blueviolet;
+            height: 60px;
+            line-height: 75px;
+            padding: 0px 50px;
+        }
+        nav h2{
+            font-size: 30px;
+            color: white;
+            font-weight:bold ;
+            float: left;
+        }
+         nav ul{
+            float: right;
+         }
+         nav ul li{
+            float: left;
+            padding-right: 50px;
+            list-style: none;
+            position: relative;
+         }
+         nav ul li a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+            font-size:17px ;
+            padding:0px 16px ;
+            display: block;
+         }
+         nav ul li a:hover{
+            background-color: black;
+         }
+         nav ul li ul{
+            position: absolute;
+            display: none;
+            background-color: blueviolet;
+            border-radius: 0px 0px 5px 5px;
+         }
+         nav ul li:hover ul{
+            display: block;
+         }
+         nav ul li ul li{
+            line-height: 1;
+            width: 190px;
+            border-radius: 5px;
+            padding: 6px;
+         }
+         nav ul li ul li a{
+            padding: 10px 16px;
+         }
+         nav ul li ul li a:hover{
+            background-color: brown;
+         }
+         div{
+            padding-top: 150px;
+         }
+        footer{
+            border: 1px solid black;
+            margin-top: 230px;
+            height: 65px;
+            width: 100%;
+            color: white;
+            padding: 40px;
+            padding-top: 10px;
+            font-size: 20px;
+            background-color: blueviolet;
+              }
+              b{
+               margin-left: 600px;
+             }
+             h1{
+               text-align: center;
+               text-decoration: underline black;
+               margin-top: 260px;
+               font-size: 50px;
+               font-style: italic ;
+               color: palegreen;
+             }
+    </style>
+</head>
+<body >
+   
+   <nav>
+    <h2>C++ Tutorial</h2>
+    <ul>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="page2.html">Introduction</a></li>
+        <li><a href="">About Us</a>
+            <ul>
+                <li><a href="page3.html">Concept</a></li>
+                <li><a href="function.html">Function</a></li>
+                <li><a href="data type.html">Data Type</a></li>
+                <li><a href="operators.html">Operators</a></li>
+                <li><a href="manipulator.html">Manipulators</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+   </nav>
+   <h1>OOPs In C++</h1>
+    <footer> 05-05-2023@Continue Reading
+      <b>@ 2023 oops Concept by varsha sen.</b>
+    </footer>
+
+
+    
+</body>
+</html>

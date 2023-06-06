@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+       margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   nav{
+     width: 100%;
+  background-color: blueviolet;
+     height: 60px;
+  line-height: 75px;
+        padding: 0px 50px;
+        }
+     nav h2{
+                    font-size: 30px;
+                    color: white;
+                    font-weight:bold ;
+                    float: left;
+                }
+                 nav ul{
+                    float: right;
+                 }
+                 nav ul li{
+                    float: left;
+                    padding-right: 50px;
+                    list-style: none;
+                    position: relative;
+                 }
+                 nav ul li a{
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    color: white;
+                    font-size:17px ;
+                    padding:0px 16px ;
+                    display: block;
+                 }
+                 nav ul li a:hover{
+                    background-color: black;
+                 }
+                 nav ul li ul{
+                    position: absolute;
+                    display: none;
+                    background-color: blueviolet;
+                    border-radius: 0px 0px 5px 5px;
+                 }
+                 nav ul li:hover ul{
+                    display: block;
+                 }
+                 nav ul li ul li{
+                    line-height: 1;
+                    width: 190px;
+                    border-radius: 5px;
+                    padding: 6px;
+                 }
+                 nav ul li ul li a{
+                    padding: 10px 16px;
+                 }
+                 nav ul li ul li a:hover{
+                    background-color: yellowgreen;
+                 }
+                 div{
+                    padding-top: 150px;
+                 }
+                 body{
+               background-image: url(boot6.jpg.jpg);
+               background-size: cover;
+               background-repeat: no-repeat;
+               
+            }
+                .form{
+                  border: 3px solid white;
+                  margin-top: 30px;
+                  height: 450px;
+                  width: 550px;
+                  margin-left: 400px;
+                  box-shadow: 11px 11px 6px lightslategray;
+            }
+           
+               
+              .box{
+               margin-top: -250px;
+               padding-left: 170px;
+               color: palegreen;
+               font-size: 18px;
+      
+         
+              }
+           input{
+            height:30px ;
+            width: 250px;
+      padding-left: 30px;
+
+           }
+            button{
+               height: 30px;
+               width: 90px;
+               font-size: 20px;
+               box-shadow: 5px 5px 3px black;
+            }  
+            
+           footer{
+      
+            border: 1px solid black;
+            margin-top: 55px;
+            height: 65px;
+            width: 100%;
+            color: white;
+            padding: 40px;
+            padding-top: 10px;
+            font-size: 20px;
+            background-color: blueviolet;
+              }
+              b{
+               margin-left: 600px;
+             }
+             
+            
+             
+</style>
+    
+</head>
+<body>
+    <nav>
+        <h2>C++ Tutorial</h2>
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="page2.html">Introduction</a></li>
+            <li><a href="">About Us</a>
+                <ul>
+                    <li><a href="page3.html">Concept</a></li>
+                    <li><a href="function.html">Function</a></li>
+                    <li><a href="data type.html">Data Type</a></li>
+                    <li><a href="operators.html">Operators</a></li>
+                    <li><a href="manipulator.html">Manipulators</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav><br>
+       <div class="form">
+         
+         <div class="box">
+            <h1>Contact Us</h1> <br><br>
+      
+          <input type="text" placeholder="Enter your name"><br><br>
+         
+       <input type="text" placeholder="Enter your name"><br><br>
+       
+         <input type="text" placeholder="Enter your name"><br><br>
+         
+         <input type="text" placeholder="Enter your name"><br><br>
+         <button style="background-color: green; color:white;">Login</button>
+         <button style="background-color: blue; color: white;">Sign Up</button>
+      </div>
+      </div>   
+        
+   
+       
+    <footer>05-05-2023@Continue Reading
+       <b>@2023 oops concept by varsha sen.</b>
+    </footer>
+</body>
+</html>

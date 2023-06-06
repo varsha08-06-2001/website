@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+        nav{
+            width: 100%;
+            background-color: blueviolet;
+            height: 60px;
+            line-height: 75px;
+            padding: 0px 50px;
+        }
+        nav h2{
+            font-size: 30px;
+            color: white;
+            font-weight:bold ;
+            float: left;
+        }
+         nav ul{
+            float: right;
+         }
+         nav ul li{
+            float: left;
+            padding-right: 50px;
+            list-style: none;
+            position: relative;
+         }
+         nav ul li a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+            font-size:17px ;
+            padding:0px 16px ;
+            display: block;
+         }
+         nav ul li a:hover{
+            background-color: black;
+         }
+         nav ul li ul{
+            position: absolute;
+            display: none;
+            background-color: blueviolet;
+            border-radius: 0px 0px 5px 5px;
+         }
+         nav ul li:hover ul{
+            display: block;
+         }
+         nav ul li ul li{
+            line-height: 1;
+            width: 190px;
+            border-radius: 5px;
+            padding: 6px;
+         }
+         nav ul li ul li a{
+            padding: 10px 16px;
+         }
+         nav ul li ul li a:hover{
+            background-color:yellowgreen;
+         }
+         div{
+            padding-top: 150px;
+         }
+         h1{
+          text-align: center;
+          text-decoration: underline red;
+          margin-left: 450px;
+         }
+         footer{
+            border: 1px solid black;
+            margin-top: 30px;
+            height: 65px;
+            width: 100%;
+            color: white;
+            padding: 40px;
+            padding-top: 10px;
+            font-size: 20px;
+            background-color: blueviolet;
+      }
+        b{
+         margin-left: 620px;
+        }
+        h3{
+       text-decoration: none maroon;
+       font-size: 19px;
+       margin-left: 55px;
+       margin-right: 40px;
+
+        }
+        p{
+         margin-left: 45px;
+         margin-right: 35px;
+         font-size: 20px;
+   
+         background-color: lightblue;
+        }
+   mark{
+      background-color: lightslategray;
+   }
+   </style>
+</head>
+<body>
+    <nav>
+        <h2>C++ Tutorial</h2>
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="">About Us</a>
+                <ul>
+                    <li><a href="page3.html">Concept</a></li>
+                    <li><a href="function.html">Function</a></li>
+                    <li><a href="data type.html">Data Type</a></li>
+                    <li><a href="operators.html">Operators</a></li>
+                    <li><a href="manipulator.html">Manipulators</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav>
+      <h1>function</h1>
+    <h3>Functions :-</h3><br>
+        <h3>A function is a group of statements that together perform a task. Every C++ program has at least one 
+        function, which is main(), and all the most trivial programs can define additional functions.<br><br>
+        You can divide up your code into separate functions. How you divide up your code among different 
+        functions is up to you, but logically the division usually is such that each function performs a specific 
+        task.<br></h3>><h3><br>
+        <mark>A function declaration tells the compiler about a function's name, return type, and parameters. A 
+        function definition provides the actual body of the function.<br></mark><br>
+
+        The C++ standard library provides numerous built-in functions that your program can call. <mark>For 
+        example, function strcat() to concatenate two strings, function memcpy() to copy one memory 
+        location to another location and many more functions.<br></h3>
+          <h3><br>
+        A function is known with various names like a method or a sub-routine or a procedure etc.<br><br>
+        Defining a Function<br></h3><br>
+        <p>The general form of a C++ function definition is as follows −<br>
+        return_type function_name( parameter list ) {<br>
+         body of the function}<br>
+        A C++ function definition consists of a function header and a function body. <mark>Here are all the parts of 
+        a function −<br><br></p></mark><br>
+        <h3> Return Type −<br></h3><br><br>
+        <h3> A function may return a value. The return_type is the data type of the value 
+        the function returns. Some functions perform the desired operations without returning a 
+        value. In this case, the return_type is the keyword void.<br></h3><br><br>
+        <h3> Function Name −<br></h3> <br><br>
+        <h3>This is the actual name of the function. The function name and the 
+        parameter list together constitute the function signature.<br></h3><br><br>
+        <h3> Parameters −<br> </h3><br><br>
+        <h3>A parameter is like a placeholder. When a function is invoked, you pass a 
+        value to the parameter. This value is referred to as actual parameter or argument. The 
+        parameter list refers to the type, order, and number of the parameters of a function. 
+        Parameters are optional; that is, a function may contain no parameters.<br></h3><br><br>
+        <h3> Function Body −<br></h3><br><br>
+        <h3> The function body contains a collection of statements that define what the 
+        function does.<br></h3><br><br>
+        <h3>Example  :-<br></h3>
+        <p>Following is the source code for a function called max(). This function takes two parameters num1 
+        and num2 and return the biggest of both −<br></p><br>
+        <h3>// function returning the max between two numbers<br></h3><br><br>
+        <p>int max(int num1, int num2) {<br><br>
+         // local variable declaration<br>
+         int result;<br>
+         if (num1 > num2)<br>
+         result = num1;<br>
+         else<br>
+         result = num2;<br>
+         return result;}<br></p><br>
+        <h3>Function Declarations :-<br></h3><br>
+        <h3>A function declaration tells the compiler about a function name and how to call the function. The 
+        actual body of the function can be defined separately.<br></h3><br>
+        <h3>A function declaration has the following parts −<br></h3>
+        <h3><mark>return_type function_name( parameter list );<br></mark>
+        <mark>For the above defined function max(), following is the function declaration −<br>
+        int max(int num1, int num2); </mark><br></h3><br>
+        <h3>Parameter names are not important in function declaration only their type is required, so following is 
+        also valid declaration −<br></h3>
+        <h3>int max(int, int);<br>
+        Function declaration is required when you define a function in one source file and you call that 
+        function in another file. In such case, you should declare the function at the top of the file calling the 
+        function.<br><br></h3>
+        <h3>Calling a Function :-<br></h3>
+        <h3>While creating a C++ function, you give a definition of what the function has to do. To use a 
+        function, you will have to call or invoke that function.<br></h3>
+        <p>When a program calls a function, program control is transferred to the called function. A called 
+        function performs defined task and when it‟s return statement is executed or when its functionending closing
+         brace is reached, it returns program control back to the main program.<br></p>
+        <h3>To call a function, you simply need to pass the required parameters along with function name, and if 
+        function returns a value, then you can store returned value.<br><br></h3>
+        <h3> For example −<br></h3><br>
+          <p>#include &lt;iostream&gt;<br>
+            using namespace std;<br>
+            // function declaration<br>
+            int max(int num1, int num2);<br>
+            int main () {<br>
+             // local variable declaration:<br>
+             int a = 100;<br>
+             int b = 200;<br>
+             int ret;<br>
+             // calling a function to get max value.<br>
+             ret = max(a, b);<br>
+             cout << "Max value is : " << ret << endl;<br>
+             return 0;}<br>
+            // function returning the max between two numbers<br>
+            int max(int num1, int num2) {<br>
+             // local variable declaration<br>
+             int result;<br>
+             if (num1 > num2)<br>
+             result = num1;<br>
+             else<br>
+             result = num2;<br>
+             return result; }<br><br>
+            </p>
+        
+             <h3>I kept max() function along with main() function and compiled the source code. While running final 
+             executable, it would produce the following result −<br>
+             Max value is : 200<br><br></h3>
+          <mark><h3> Arguments :-<br></h3><br></mark>
+<h3>If a function is to use arguments, it must declare variables that accept the values of the arguments. 
+These variables are called the formal parameters of the function. The formal parameters behave like 
+other local variables inside the function and are created upon entry into the function and destroyed 
+upon exit. While calling a function, there are two ways that arguments can be passed to a function -<br><br>
+<mark>1 call by value :-<br></mark>
+This method copies the actual value of an argument into the formal parameter of the function. In 
+this case, changes made to the parameter inside the function have no effect on the argument.<br><br>
+<mark>2 call by pointer :-<br></mark>
+This method copies the address of an argument into the formal parameter. Inside the function, the 
+address is used to access the actual argument used in the call. This means that changes made to 
+the parameter affect the argument.<br><br>
+<mark>call by Reference :-<br></mark>
+This method copies the reference of an argument into the formal parameter. Inside the function, 
+the reference is used to access the actual argument used in the call. This means that changes 
+made to the parameter affect the argument.<br><br></h3>
+<h3>Example</h3><br>
+<p>#include &lt;iostream&gt;<br>
+   using namespace std;<br>
+   int sum(int a, int b = 20) {<br>
+    int result;<br>
+    result = a + b;<br>
+    return (result);}<br>
+   int main () {<br>
+    // local variable declaration:<br>
+    int a = 100;<br>
+    int b = 200;<br>
+    int result;<br>
+    // calling a function to add the values.<br>
+    result = sum(a, b);<br>
+    cout << "Total value is :" << result << endl;<br>
+    // calling a function again as follows.<br>
+    result = sum(a);<br>
+    cout << "Total value is :" << result << endl;<br>
+    return 0;}<br>
+   When the above code is compiled and executed, it produces the following result −<br>
+   Total value is :300<br>
+   Total value is :120<br>
+
+   </p>
+</p>
+    
+
+        <footer>05-05-2023@Continue Reading
+         <b>@ 2023 oops Concept by varsha sen.</b>
+      </footer>
+</body>
+</html>

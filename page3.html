@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        h2{
+            text-decoration:  underline blueviolet;
+            text-align: center;
+        
+
+        }
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+        nav{
+            width: 100%;
+            background-color: blueviolet;
+            height: 60px;
+            line-height: 75px;
+            padding: 0px 50px;
+        }
+        nav h2{
+            font-size: 30px;
+            color: white;
+            font-weight:bold ;
+            float: left;
+        }
+         nav ul{
+            float: right;
+         }
+         nav ul li{
+            float: left;
+            padding-right: 50px;
+            list-style: none;
+            position: relative;
+         }
+         nav ul li a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+            font-size:17px ;
+            padding:0px 16px ;
+            display: block;
+         }
+         nav ul li a:hover{
+            background-color: black;
+         }
+         nav ul li ul{
+            position: absolute;
+            display: none;
+            background-color: blueviolet;
+            border-radius: 0px 0px 5px 5px;
+         }
+         nav ul li:hover ul{
+            display: block;
+         }
+         nav ul li ul li{
+            line-height: 1;
+            width: 190px;
+            border-radius: 5px;
+            padding: 6px;
+         }
+         nav ul li ul li a{
+            padding: 10px 16px;
+         }
+         nav ul li ul li a:hover{
+            background-color: yellowgreen;
+         }
+         div{
+            padding-top: 150px;
+         }
+         footer{
+            border: 1px solid black;
+            margin-top: 30px;
+            height: 65px;
+            width: 100%;
+            color: white;
+            padding: 40px;
+            padding-top: 10px;
+            font-size: 20px;
+            background-color: blueviolet;
+      }
+      b{
+         margin-left: 630px;
+        }
+        h3{
+            margin-left: 70px;
+        
+            background-color: lightblue;
+            margin-right: 50px;
+
+          }
+        p{
+            margin-left: 80px;
+            margin-right: 20px;
+            font-size: 20px;
+
+        }
+        mark{
+            background-color: lightslategray;
+        }
+        img{
+            margin-left: 800px;
+            margin-top: -10px;
+            height: 280px;
+            width: 320px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <h2>C++ Tutorial</h2>
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="page2.html">Introduction</a></li>
+            <li><a href="">About Us</a>
+                <ul>
+                    <li><a href="page3.html">Concept</a></li>
+                    <li><a href="function.html">Function</a></li>
+                    <li><a href="data type.html">Data Type</a></li>
+                    <li><a href="operators.html">Operators</a></li>
+                    <li><a href="manipulator.html">Manipulators</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav>
+    
+    <h2>BASIC CONCEPTS OF OBJECTS ORIENTED PROGRAMMING :-</h2>
+
+    <br>
+       <img src="cpp-interview-questions2.png">
+       
+   <p> 1. Objects.<br>
+2. Classes.<br>
+3. Data abstraction and encapsulation.<br>
+4. Inheritance.<br>
+5. Polymorphism.<br>
+6. Dynamic binding.<br>
+7. Message passing.<br></p><br>
+<h3>
+ <h2>1.class :-</h2><br>
+<p><mark>A class is a user-defined data type. It consists of data members and member functions, which can be
+accessed and used by creating an instance of that class.</mark> It represents the set of properties or methods
+that are common to all objects of one type. A class is like a blueprint for an object<br><br></p>
+<h3><mark>class className {<br>
+    // some data<br>
+    // some functions<br>
+};</mark><br><br></h3>
+<h2>Example :-<br></h2>
+<h3>class Room {<br>
+    public:<br>
+        double length;<br>
+        double breadth;<br>
+        double height; <br>  
+            double calculaterarea(){<br>
+            return length * breadth;<br>
+            }<br>
+
+        double calculateVolume(){   <br>
+            return length * breadth * height;<br>
+        }<br>
+
+};<br></h3>
+
+<h2>2.object :-</h2>
+<p>It is a basic unit of Object-Oriented Programming and represents the real-life entities. An Object is
+an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated
+(i.e. an object is created) memory is allocated. An object has an identity, state, and behavior. Each
+object contains data and code to manipulate the data. Objects can interact without having to know
+details of each other‟s data or code, it is sufficient to know the type of message accepted and type of
+response returned by the objects.<br><br></p><br>
+<h2>syntax :-<br></h2><br>
+<h3><mark>className objectVariableName;<br></mark><br></h3>
+<h2>Example :-<br></h2>
+<h3>// sample function<br>
+void sampleFunction() {<br>
+    // create objects<br>
+    Room room1, room2;<br>
+}<br>
+
+int main(){<br>
+    // create objects <br>
+    Room room3, room4;<br>
+}<br></h3><br>
+<h2>3.data abstraction :-</h2><br>
+<p>Data abstraction is one of the most essential and important features of object-oriented programming.
+Data abstraction refers to providing only essential information about the data to the outside world,
+hiding the background details or implementation. <br></p>
+<p><mark>Data Abstraction is a programming technique that depends on the seperation of the interface and implementation details of the program.<br>
+C++ provides a great level of abstraction. For example, pow() function is used to calculate the power of a number without knowing the algorithm the function follows.<br>
+In C++ program if we implement class with private and public members then it is an example of data abstraction.<br><br></mark></p>
+<h3>// program to calculate the power of a number.<br></h3><br>
+<h3>#include &lt;iostream&gt; <br>
+    #include<math.h>  <br>
+    using namespace std;  <br>
+    int main()  <br>
+    {    <br>
+     int n = 4; <br> 
+       int power = 3;  <br>
+       int result = pow(n,power);         // pow(n,power) is the  power function  
+       std::cout << "Cube of n is : " <<result<< std::endl;  <br>
+       return 0;  <br>
+    }  <br><br>
+    <mark>Output:<br>
+    
+    Cube of n is : 64<br></h3></mark><br>
+<h2>4.encapsulation :-</h2><br>
+<p>Encapsulation is defined as the wrapping up of data under a single unit. <mark>It is the mechanism that
+binds together code and the data it manipulates. </mark>In Encapsulation, the variables or data of a class are
+hidden from any other class and can be accessed only through any member function of their class in
+which they are declared.<mark> As in encapsulation, the data in a class is hidden from other classes, so it is
+also known as data-hiding.<br><br></p></mark><br>
+<h3>#include &lt;iostream&gt;<br><br>
+    using namespace std;<br>
+    
+    class Employee {<br>
+      private:<br>
+        // Private attribute<br>
+        int salary;<br>
+    
+      public:<br>
+        // Setter<br>
+        void setSalary(int s) {<br>
+          salary = s;<br>
+        }<br>
+        // Getter<br>
+        int getSalary() {<br>
+          return salary;<br>
+        }<br>
+    };<br>
+    
+    int main() {<br>
+      Employee myObj;<br>
+      myObj.setSalary(50000);<br>
+      cout << myObj.getSalary();<br>
+      return 0;<br>
+    }<br></h3><br>
+<h2>5.inheritance :-</h2><br>
+<p>Inheritance is an important pillar of OOP(Object-Oriented Programming). The capability of a class
+to derive properties and characteristics from another class is called Inheritance. When we write a
+class, we inherit properties from other classes. So when we create a class, we do not need to write
+all the properties and functions again and again, as these can be inherited from another class that
+possesses it. Inheritance allows the user to reuse the code whenever possible and reduce its
+redundancy.<br><br></p><br>
+<h2>Example :-<br></h2><br>
+<h3>class Animal {<br>
+    // eat() function<br>
+    // sleep() function<br>
+};<br>
+
+class Dog : public Animal {<br>
+    // bark() function<br>
+};<br></h3><r>
+<h2>BENEFITS OF OOP:-</h2>
+<br><p>
+Oop offers several benefits to both the program designer and the user. Object-oriented contributes to 
+the solution of many problems associated with the development and quality of software products. 
+The principal advantages are :<br></p><br>
+
+<p>
+1. Through inheritance we can eliminate redundant code and extend the use of existing 
+classes. <br>
+2. We can build programs from the standard working modules that communicate with one 
+another, rather than having to start writing the code from scratch. This leads to saving of 
+development time and higher productivity.<br>
+3. This principle of data hiding helps the programmer to build secure programs that can’t be 
+invaded by code in other parts of the program.<br>
+4. It is possible to have multiple instances of an object to co-exist with out any interference.
+5. It is easy to partition the work in a project based on objects.<br>
+6. Object-oriented systems can be easily upgraded from small to large systems.<br>
+7. Message passing techniques for communication between objects makes the interface 
+description with external systems much simpler.<br>
+8. Software complexity can be easily managed.<br></p>
+
+
+
+<footer>05-05-2023@Continue Reading
+    <b>@ 2023 oops Concept by varsha sen.</b>
+</footer>
+</body>
+</html>

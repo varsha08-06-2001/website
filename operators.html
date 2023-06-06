@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+        nav{
+            width: 100%;
+            background-color: blueviolet;
+            height: 60px;
+            line-height: 75px;
+            padding: 0px 50px;
+        }
+        nav h2{
+            font-size: 30px;
+            color: white;
+            font-weight:bold ;
+            float: left;
+        }
+         nav ul{
+            float: right;
+         }
+         nav ul li{
+            float: left;
+            padding-right: 50px;
+            list-style: none;
+            position: relative;
+         }
+         nav ul li a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+            font-size:17px ;
+            padding:0px 16px ;
+            display: block;
+         }
+         nav ul li a:hover{
+            background-color: black;
+         }
+         nav ul li ul{
+            position: absolute;
+            display: none;
+            background-color: blueviolet;
+            border-radius: 0px 0px 5px 5px;
+         }
+         nav ul li:hover ul{
+            display: block;
+         }
+         nav ul li ul li{
+            line-height: 1;
+            width: 190px;
+            border-radius: 5px;
+            padding: 6px;
+         }
+         nav ul li ul li a{
+            padding: 10px 16px;
+         }
+         nav ul li ul li a:hover{
+            background-color:yellowgreen;
+         }
+         div{
+            padding-top: 150px;
+         }
+         h1{
+          text-align: center;
+         text-decoration: underline red;
+          margin-left: 450px;
+         }
+         footer{
+            border: 1px solid black;
+            margin-top: 30px;
+            height: 65px;
+            width: 100%;
+            color: white;
+            padding: 40px;
+            padding-top: 10px;
+            font-size: 20px;
+            background-color: blueviolet;
+            
+        }
+        b{
+         margin-left: 620px;
+        }
+        h2{
+        text-decoration: none ;
+        margin-left: 70px;
+        }
+        h3{
+            margin-left: 100px;
+            margin-right: 30px;
+        }
+        p{
+             font-size: 19px;
+             margin-left: 80px;
+             margin-right: 30px;
+        }
+        h2{
+         text-decoration: underline red;
+        }
+        h{
+         font-size: 35px;
+         color: white;
+        }
+        mark{
+         background-color: lightslategray;
+        }
+   </style>
+</head>
+<body>
+    <nav>
+        <h>C++ Tutorial</h>
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="page2.html">Introduction</a></li>
+            <li><a href="">About Us</a>
+                <ul>
+                    <li><a href="page3.html">Concept</a></li>
+                    <li><a href="function.html">Function</a></li>
+                    <li><a href="data type.html">Data Type</a></li>
+                    <li><a href="operators.html">Operators</a></li>
+                    <li><a href="manipulator.html">Manipulators</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       </nav>
+      <h1>operators</h1>
+    
+      <h2>Operators :-</h2>
+<p>Operators are special type of functions, that takes one or more arguments and produces a new value.</p> 
+<h2>For example :</h2> <p><mark>addition (+), substraction (-), multiplication (*) etc, are all operators. Operators are used 
+to perform various operations on variables and constants.<br><br></p></mark>
+<h2>Types of operators :-<br><br></h2>
+<h3>1. Assignment Operator.<br>
+2. Mathematical Operators.<br>
+3. Relational Operators.<br>
+4. Logical Operators.<br>
+5. Bitwise Operators.<br>
+6. Shift Operators.<br>
+7. Unary Operators.<br>
+8. Ternary Operator.<br>
+9. Comma Operator.<br><br><h3></h3>
+
+<h2>Assignment Operator (=) :-<br></h2>
+<p>Operates '=' is used for assignment, it takes the right-hand side (called rvalue) and copy it into the lefthand side (called lvalue). Assignment operator is the only operator which can be overloaded but 
+cannot be inherited.<br>
+Mathematical Operators<br></p>
+<h3>There are operators used to perform basic mathematical operations. Addition (+) , subtraction (-) , 
+diversion (/) multiplication (*) and modulus (%) are the basic mathematical operators. Modulus 
+operator cannot be used with floating-point numbers.<br>
+int x=10;<br>
+x += 4 // will add 4 to 10, and hence assign 14 to X. <br>
+x -= 5 // will subtract 5 from 10 and assign 5 to x.<br><br></h3>
+<h2>Relational Operators :-<br></h2>
+<p>These operators establish a relationship between operands. The relational operators are : less than (<) , 
+grater thatn (>) , less than or equal to (<=), greater than equal to (>=), equivalent (==) and not 
+equivalent (!=).<br></p>
+<h3>You must notice that assignment operator is (=) and there is a relational operator, for equivalent (==). 
+These two are different from each other, the assignment operator assigns the value to any Variables, 
+whereas equivalent operator is used to compare values, like in if-else conditions, Example<br>
+int x = 10; //assignment operator<br>
+x=5; // again assignment operator <br>
+if(x == 5) // here we have used equivalent relational operator, for comparison<br>
+{<br>
+ cout <<"Successfully compared";}<br><br></h3>
+ <h2>Logical Operators :-<br></h2>
+<p>The logical operators are AND (&&) and OR (||). They are used to combine two different expressions 
+together.<br>
+If two statement are connected using AND operator, the validity of both statements will be considered, 
+but if they are connected using OR operator, then either one of them must be valid. These operators 
+are mostly used in loops (especially while loop) and in Decision making.<br><br></p>
+<h2>Bitwise Operators :-<br></h2>
+<p>There are used to change individual bits into a number. They work with only integral data 
+types like char, int and long and not with floating point values.<br></p>
+<h3>Bitwise AND operators &<br>
+Bitwise OR operator |<br>
+And bitwise XOR operator ^<br>
+And, bitwise NOT operator ~<br>
+They can be used as shorthand notation too, & = , |= , ^= , ~= etc.<br><br></h3>
+<h2>Shift Operators :-<br></h2>
+<p>Shift Operators are used to shift Bits of any variable. It is of three types,<br></p>
+<h3>1. Left Shift Operator << <br>
+2. Right Shift Operator >><br>
+3. Unsigned Right Shift Operator >>><br></h3>
+<h2>Unary Operators :-<br></h2>
+<p>These are the operators which work on only one operand. There are many unary operators, but 
+increment ++ and decrement -- operators are most used.<br><br></p><br>
+<h3>Other Unary Operators :-<br></h3>
+ <p>address of &, dereference *, new and delete, bitwise not ~, logical not !, 
+unary minus - and unary plus +.<br></p><br>
+<h3>Ternary Operator :-<br></h3>
+<p>The ternary if-else ? : is an operator which has three operands.<br></p>
+<h3>int a = 10;<br>
+a > 5 ? cout << "true" : cout << "false"<br></h3><br>
+<h2>Comma Operator<br></h2>
+<p>This is used to separate variable names and to separate expressions. In case of expressions, the value 
+of last expression is produced and used.<br></p><br>
+<h2>Example :<br></h2>
+<h3>int a,b,c; // variables declaration using comma operator<br>
+a=b++, c++; // a = c++ will be done.<br><br></h3>
+
+
+      
+     <h2> Syntax: : :</h2>
+      <h3> variable –name;  <br></h3>
+
+      <h2>Example :-<br></h2>
+      <h3>#include &lt;iostrcam&gt;<br>
+      int m=10;<br>
+      main()<br>
+      {<br>
+      int m=20;<br>
+      {<br>
+      int k=m;<br>
+      int m=30;<br>
+      cout<<”we are in inner block”;<br>
+      cout<<"k="<<k<<endl;<br>
+      cout<<"m="<<m<<endl;<br>
+      cout<<":: m="<<:: m<<endl;<br>
+      }<br>
+      cout<<”\n we are in outer block \n”;<br>
+      cout<<"m="<<m<<endl;<br>
+      cout<<":: m="<<:: m<<endl;<br>
+      }<br></h3>
+   
+
+        <footer>05-05-2023@Continue Reading
+              <b>@ 2023 oops Concept by varsha sen</b>
+        </footer>
+</body>
+</html>

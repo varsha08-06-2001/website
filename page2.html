@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+        nav{
+            width: 100%;
+            background-color: blueviolet;
+            height: 60px;
+            line-height: 75px;
+            padding: 0px 50px;
+        }
+        nav h2{
+            font-size: 30px;
+            color: white;
+            font-weight:bold ;
+            float: left;
+        }
+         nav ul{
+            float: right;
+         }
+         nav ul li{
+            float: left;
+            padding-right: 50px;
+            list-style: none;
+            position: relative;
+         }
+         nav ul li a{
+            text-decoration: none;
+            font-family: sans-serif;
+            color: white;
+            font-size:17px ;
+            padding:0px 16px ;
+            display: block;
+         }
+         nav ul li a:hover{
+            background-color: black;
+         }
+         nav ul li ul{
+            position: absolute;
+            display: none;
+            background-color: blueviolet;
+            border-radius: 0px 0px 5px 5px;
+         }
+         nav ul li:hover ul{
+            display: block;
+         }
+         nav ul li ul li{
+            line-height: 1;
+            width: 190px;
+            border-radius: 5px;
+            padding: 6px;
+         }
+         nav ul li ul li a{
+            padding: 10px 16px;
+         }
+         nav ul li ul li a:hover{
+            background-color: yellowgreen;
+         }
+         div{
+            padding-top: 150px;
+         }
+        footer{
+            border: 1px solid black;
+            margin-top: 60px;
+            height: 65px;
+            width: 100%;
+            color: white;
+            padding: 40px;
+            padding-top: 10px;
+            font-size: 20px;
+            background-color: blueviolet;
+              }
+              b{
+               margin-left: 600px;
+             }
+        h2{
+         font-size: 25px;
+         margin-left: 50px;
+         margin-right: 30px;
+         text-decoration: underline blueviolet;
+        }
+        h3{
+         font-size: 20px;
+         margin-left: 40px;
+         margin-right: 35px;
+      
+         background-color: lightblue;
+        }
+        p{
+         font-size: 20px;
+         margin-left: 130px;
+         margin-right: 30px;
+        }
+        h1{
+         text-decoration: underline maroon;
+         margin-left: 500px;
+        }
+        mark{
+         background-color: lightslategray;
+        }
+        img{
+         margin-left:900px;
+         height: 400px;
+         width: 300px;
+         box-shadow: 10px 10px 5px;
+        }
+        
+      
+    </style>
+</head>
+<body>
+   <nav>
+      <h2>C++ Tutorial</h2>
+      <ul>
+          <li><a href="index.html">Home </a></li>
+          <li><a href="page2.html">Introduction</a></li>
+          <li><a href="">About Us</a>
+              <ul>
+                  <li><a href="page3.html">Concept</a></li>
+                  <li><a href="function.html">Function</a></li>
+                  <li><a href="data type.html">Data Type</a></li>
+                  <li><a href="operators.html">Operators</a></li>
+                  <li><a href="manipulator.html">Manipulators</a></li>
+              </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+     </nav>
+          <h1>Introduction</h1>
+        
+     
+     <h2>what is oops in c++ ?<br><br></h2>
+     <p>Object-Oriented Programming or OOPs refers to languages that use objects in programming.
+     Object-oriented programming aims to implement real-world entities like inheritance,
+      hiding,,
+     polymorphism, etc in programming. The main aim of OOP is to bind together the 
+     data and the
+     functions that operate on them so that no other part of the code can access this data except that
+     function.<br><br>
+     <mark>"C++ is a cross-platform language that can be used to create high-performance applications".
+     C++ was developed by Bjarne Stroustrup, as an extension to the C language.<br></mark><br>
+     <mark>C++ gives programmers a high level of control over system resources and memory.
+     The language was updated 4 major times in 2011, 2014, 2017, and 2020 to C++11, C++14, C++17, C++20.<br><br></mark></p>
+     <h2>basics of c++ :-<br><br></h2>
+     <p>c++ is an object Object-Oriented programming languages,<mark>c++ was developed by jarney stroustrup at AT & BeLL lab,  USA in esrileighties. 
+     c++ was developed from c and simula 67 languages in c++ was early called 'c with classes'.<br><br></mark></p>
+     
+
+     <h2>Characteristics of procedure oriented programming :-<br></h2>
+       <p>1. Emphasis is on doing things(algorithm)<br>
+        2. Large programs are divided into smaller programs known as functions.<br>
+        3. Most of the functions share global data.<br>
+        4. Data move openly around the system from function to function.<br>
+        5. Function transforms data from one form to another.<br> 
+        6. Employs top-down approach in program design.<br><br> </p>
+
+        <h2>Features of the Object Oriented programming :-<br></h2>
+        <p>1. Emphasis is on doing rather than procedure.<br>
+2. programs are divided into what are known as objects.<br>
+3. Data structures are designed such that they characterize the objects.<br>
+4. Functions that operate on the data of an object are tied together in the data 
+structure.<br>
+5. Data is hidden and can’t be accessed by external functions. <br>
+6. Objects may communicate with each other through functions.<br>
+7. New data and functions can be easily added. <br>
+8. Follows bottom-up approach in program design.<br><br></p>
+         
+<h2>APPLICATION OF OOP :-<br><br></h2>
+<mark><p>The most popular application of oops up to now, has been in the area of user interface 
+design such as windows. There are hundreds of windowing systems developed using oop 
+techniques.<br></p></mark>
+
+<h3><mark>Real business systems are often much more complex and contain many more objects 
+with complicated attributes and methods. Oop is useful in this type of applications because it 
+can simplify a complex problem. The promising areas for application of oop includes.<br></h3></mark>
+<h2>1. Real - Time systems :-<br></h2>
+<p>Real-time system inherits complexities and makes it difficult to 
+build them. OOP techniques make it easier to handle those complexities.<br></p>
+<h2>2. Simulation and modeling :-<br></h2><p>It is difficult to model complex systems due to varying 
+specifications of variables. Stimulating complex systems require modeling and understanding 
+interaction explicitly. OOP provides an appropriate approach for simplifying these complex 
+models<br></p>
+<h2>3. Object oriented databases :- <br></h2>
+<p>The databases try to maintain a direct correspondence between the 
+real world and database object in order to let the object retain it identity and integrity.<br></p>
+
+<h2>4. Hypertext,hypermedia and expertext :-<br></h2>
+ <p>Hypertext is similar to regular text as it can be stored, searched, 
+and edited easily. <mark>Hypermedia on the other hand is a superset of hypertext. OOP also helps in 
+laying the framework for hypertext and hypermedia.<br></p></mark>
+<h2>5. Al and expert systems :- <br></h2>
+<p>These are computer application that is developed to solve complex 
+problems which are far beyond the human brain. OOP helps to develop such an AI expert 
+System.<br></p>
+<h2>6. Neural networks and parallel programming :- <br></h2>
+ <p>It addresses the problem of prediction and 
+approximation of complex-time varying systems. OOP simplifies the entire process by 
+simplifying the approximation and prediction ability of the network.<br></p>
+<h2>7. Dicision support and office automation systems :-<br></h2>
+  <p>These include formal as well as informal electronic systems that 
+primarily concerned with information sharing and communication to and from people inside and 
+outside the organization. OOP also help in making office automation principle.</p><br><br>
+ <h2>syntax :-<br></h2><br>
+      <h3>#include &lt;iostream&gt;<br>
+        using namespace std;<br>
+        
+        int main() {<br>
+         <mark> cout << "Hello World!";<br></mark>
+          return 0;<br>
+        }<br><br></h3><br>
+
+        <h2>Example:-<br></h2><br>
+        <h3>#include<iostream.h> <br>
+            using namespace std;<br>
+            void fun(){<br>
+             static int i=0; //static variable<br>
+             int j=0; //local variable |<br>
+             i++; <br>
+             j++; <br>
+             cout<<"i="" << i and j="<< j<< end1;<br>
+            }<br>
+            int main()<br>
+            {<br>
+                fun();<br>
+                fun();<br>
+                fun();<br>
+            }<br><br>
+           <mark> output:-<br>
+            i=  1 and j= 1<br>
+            i=  2 and j= 1<br>
+            i=  3 and j=1<br><br></mark></h3>
+
+        <h2>c++ in comments :-<br></h2>
+       <p> Comments can be used to explain C++ code, and to make it more readable.
+         <mark>It can also be used to prevent execution when testing alternative code.
+         Comments can be singled-lined or multi-lined.<br><br></mark></p>
+             <h2>1-single-line comments single-line-<br></h2>
+           <p>Single-line comments start with two forward slashes (//).<br>
+            Any text between // and the end of the line is ignored by the compiler 
+            (will not be executed).<br><br></p>
+           <h2>example:-<br></h2>
+           <p><mark> // This is a comment<br>
+                cout << "Hello World!";<br><br></mark></p>
+             <h2>2-multi-line comments-<br></h2>
+           <p> Multi-line comments start with /* and ends with */.<br>
+
+Any text between /* and */ will be ignored by the compiler:<br><br></p>
+<h2>example-<br></h2>
+<p>/* The code below will print the words Hello World!<br>
+to the screen, and it is amazing */<br>
+<mark>cout << "Hello World!";<br></mark></p>
+ 
+        </p>
+<footer> 05-05-2023@Continue Reading
+    <b>@ 2023 oops Concept by varsha sen.</b>
+</footer>
+    
+      
+</body>
+</html>
